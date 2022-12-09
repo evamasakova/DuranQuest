@@ -1,17 +1,30 @@
 package com.company.days;
 
 import com.company.GameDialog;
-
+/**
+ * Třída DayManager se stárá o správu dnů.
+ * @author Masáková Jr.
+ * @version 0.1a
+ * @since Java 16
+ */
 public class DayManager {
 
     private short dayCount = 1;
     private byte weekDay = 0;
     private GameDialog gameDialog = new GameDialog();
 
+    /**
+     * Spustí nový den
+     * @throws Exception
+     */
     public void startDay() throws Exception {
         dayIntro();
     }
 
+    /**
+     * Uvede hráče do nového dne
+     * @throws Exception
+     */
     private void dayIntro() throws Exception {
         Day day;
         switch (weekDay) {
@@ -27,6 +40,7 @@ public class DayManager {
         gameDialog.say(day.getInfo(), "purple");
 
     }
+
 
     public void endDay() {
 

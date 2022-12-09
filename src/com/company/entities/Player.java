@@ -4,9 +4,16 @@ import com.company.GameDif;
 import com.company.items.Food;
 import com.company.items.Potion;
 import com.company.map.GameLocation;
-
+/**
+ * Třída pro vytváření přátel
+ * @author Masáková Jr.
+ * @version 0.1a
+ * @since Java 16
+ */
 public class Player implements Entity {
-
+    /**
+     * Jméno hráče
+     */
     private final String name = "Tomas Duran";
 
     @Override
